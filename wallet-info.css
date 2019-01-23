@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "SpaceGrotesk-Regular";
+  src: url(/fonts/SpaceGrotesk-Regular.woff); }
+
+@font-face {
+  font-family: "SpaceGrotesk-Medium";
+  src: url(/fonts/SpaceGrotesk-Medium.woff); }
+
+@font-face {
+  font-family: "SpaceGrotesk-SemiBold";
+  src: url(/fonts/SpaceGrotesk-SemiBold.woff); }
+
+@font-face {
+  font-family: "SpaceGrotesk-Bold";
+  src: url(/fonts/SpaceGrotesk-Bold.woff); }
+
+.component-wallet-info {
+  height: 36px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: 1px solid #EAEAEA; }
+  .component-wallet-info .indicator.success {
+    color: #00BFA5; }
+  .component-wallet-info .indicator.loading {
+    color: #525C67; }
+  .component-wallet-info .indicator.warning {
+    color: #CC2222; }
+  .component-wallet-info .indicator:before {
+    content: ' \25CF';
+    font-size: 20px; }
+  .component-wallet-info .label {
+    font-family: "Roboto";
+    font-weight: 500;
+    color: #525C67;
+    font-size: 14px;
+    margin: 0px 8px; }
+  .component-wallet-info .value {
+    font-family: "Roboto";
+    font-weight: 500;
+    color: #253239;
+    font-size: 14px; }
+  .component-wallet-info.privacy {
+    padding: 8px 16px 8px 11px;
+    background-color: #017bff;
+    border-radius: 8px; }
+    .component-wallet-info.privacy .indicator {
+      color: white; }
+      .component-wallet-info.privacy .indicator:before {
+        content: ' \25CF';
+        font-size: 22px; }
+    .component-wallet-info.privacy .label {
+      font-family: "Roboto";
+      font-weight: 500;
+      color: white;
+      margin: 0px 0px 0px 6px; }
+    .component-wallet-info.privacy:hover {
+      cursor: pointer;
+      filter: brightness(1.2); }

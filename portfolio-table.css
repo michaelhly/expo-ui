@@ -1,0 +1,56 @@
+@font-face {
+  font-family: "SpaceGrotesk-Regular";
+  src: url(/fonts/SpaceGrotesk-Regular.woff); }
+
+@font-face {
+  font-family: "SpaceGrotesk-Medium";
+  src: url(/fonts/SpaceGrotesk-Medium.woff); }
+
+@font-face {
+  font-family: "SpaceGrotesk-SemiBold";
+  src: url(/fonts/SpaceGrotesk-SemiBold.woff); }
+
+@font-face {
+  font-family: "SpaceGrotesk-Bold";
+  src: url(/fonts/SpaceGrotesk-Bold.woff); }
+
+.component-portfolio-table .position-titles {
+  font-family: "Roboto";
+  font-weight: 500;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #939FA5; }
+
+.component-portfolio-table .column-name {
+  min-width: 300px; }
+  .component-portfolio-table .column-name.column-label {
+    margin-left: 18px;
+    margin-right: -18px; }
+
+.component-portfolio-table .column-price {
+  min-width: 115px; }
+
+.component-portfolio-table .column-ratio {
+  min-width: 115px; }
+
+.component-portfolio-table .column-owned {
+  min-width: 115px; }
+
+.component-portfolio-table .column-value {
+  min-width: 115px; }
+
+.component-portfolio-table .column-change {
+  min-width: 115px; }
+
+.component-portfolio-table .column-gains {
+  min-width: 120px; }
+
+.component-portfolio-table .divider {
+  border-top: 1px solid #EAEAEA;
+  height: 1px;
+  width: 100%; }
