@@ -1,0 +1,80 @@
+@font-face {
+  font-family: "SpaceGrotesk-Regular";
+  src: url(/fonts/SpaceGrotesk-Regular.woff);
+}
+
+@font-face {
+  font-family: "SpaceGrotesk-Medium";
+  src: url(/fonts/SpaceGrotesk-Medium.woff);
+}
+
+@font-face {
+  font-family: "SpaceGrotesk-SemiBold";
+  src: url(/fonts/SpaceGrotesk-SemiBold.woff);
+}
+
+@font-face {
+  font-family: "SpaceGrotesk-Bold";
+  src: url(/fonts/SpaceGrotesk-Bold.woff);
+}
+
+.tooltip {
+  pointer-events: all;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ececec;
+  max-width: 253px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.04);
+}
+.tooltip .top-info {
+  display: flex;
+  justify-content: space-between;
+}
+.tooltip .top-info .top-title {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 14px;
+  color: #263a4f;
+}
+.tooltip .top-info .corner-text {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 14px;
+}
+.tooltip a {
+  text-decoration: none;
+}
+.tooltip a:visited {
+  text-decoration: none;
+}
+.tooltip .learn-more {
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Roboto";
+  font-weight: 400;
+  white-space: nowrap;
+  color: #939fa5;
+  padding: 8px 0px 0px;
+}
+.tooltip .learn-more:hover {
+  cursor: pointer;
+}
+.tooltip .learn-more img {
+  margin-left: 4px;
+}
+.tooltip .info-body {
+  font-family: "Roboto";
+  font-weight: 400;
+  line-height: 16px;
+  color: #263a4f;
+  margin-top: 8px;
+  font-size: 14px;
+}
+.tooltip .info-body b {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-style: italic;
+}

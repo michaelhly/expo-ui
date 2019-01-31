@@ -1,0 +1,149 @@
+@font-face {
+  font-family: "SpaceGrotesk-Regular";
+  src: url(/fonts/SpaceGrotesk-Regular.woff);
+}
+
+@font-face {
+  font-family: "SpaceGrotesk-Medium";
+  src: url(/fonts/SpaceGrotesk-Medium.woff);
+}
+
+@font-face {
+  font-family: "SpaceGrotesk-SemiBold";
+  src: url(/fonts/SpaceGrotesk-SemiBold.woff);
+}
+
+@font-face {
+  font-family: "SpaceGrotesk-Bold";
+  src: url(/fonts/SpaceGrotesk-Bold.woff);
+}
+
+.chart-container-component {
+  position: relative;
+  height: 348px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 32px 32px 0px 32px;
+}
+.chart-container-component.show-margin-call .price,
+.chart-container-component.show-margin-call .base-price {
+  opacity: 0.2;
+}
+.chart-container-component .spinner {
+  height: 100%;
+}
+.chart-container-component .spinner img {
+  width: 16px;
+  height: 16px;
+}
+.chart-container-component .price-container {
+  display: flex;
+  align-items: center;
+  margin-top: 4px;
+}
+.chart-container-component .price-container .about-price {
+  padding: 8px 16px;
+  position: absolute;
+  right: -16px;
+  font-family: "Roboto";
+  font-weight: 500;
+  color: #939fa5;
+  font-size: 14px;
+}
+.chart-container-component .price-container .about-price.selected,
+.chart-container-component .price-container .about-price:hover {
+  cursor: default;
+  border-radius: 8px;
+  background-color: #ececec;
+  color: #525c67;
+}
+.chart-container-component .price-container .price {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 40px;
+  color: black;
+  white-space: nowrap;
+}
+.chart-container-component .price-container .icon {
+  margin-left: 16px;
+}
+.chart-container-component .price-container .arrow {
+  margin-left: 16px;
+}
+.chart-container-component .base-price-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.chart-container-component .base-price-container .base-price {
+  font-family: "Roboto";
+  font-weight: 500;
+  color: #939fa5;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.chart-container-component .base-price-container .arrow {
+  margin-left: 16px;
+}
+.chart-container-component .chart {
+  margin-top: 22px;
+  min-height: 185px;
+  display: flex;
+  justify-content: center;
+}
+.chart-container-component .tooltip-container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  z-index: 99;
+  pointer-events: none;
+}
+.chart-container-component .tooltip-container.margin-tt {
+  bottom: 80px;
+}
+.chart-container-component .tooltip-container.price-tt {
+  top: 38px;
+  right: -16px;
+}
+.chart-container-component .tooltip-container.expires-tt {
+  bottom: 40px;
+}
+.chart-container-component .tooltip-container .tooltip-wrapper {
+  pointer-events: all;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+.chart-container-component .bottom-info {
+  height: 16px;
+  align-items: center;
+  margin-top: 16px;
+  width: 100%;
+  font-family: "Roboto";
+  font-weight: 500;
+  color: #939fa5;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+}
+.chart-container-component .bottom-info .date-start {
+  text-transform: uppercase;
+  width: 100px;
+}
+.chart-container-component .bottom-info .date-cur {
+  text-transform: uppercase;
+  padding: 8px 16px;
+}
+.chart-container-component .bottom-info .date-cur.date-cur-selected,
+.chart-container-component .bottom-info .date-cur:hover {
+  cursor: default;
+  border-radius: 8px;
+  background-color: #ececec;
+  color: #525c67;
+}
+.chart-container-component .bottom-info .date-end {
+  text-transform: uppercase;
+  width: 100px;
+  text-align: right;
+}
